@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="Css/Rasta-Main.css">
+    <link rel="stylesheet" href="Css/Rasta-Theme.css">
+    <link rel="stylesheet" href="Css/Color-Storage.css">
+</head>
+
+<body dir="rtl">
+    <div class="container-fluid Main-container" id="background-container">
+        <header id="customHeader">
+            <div class="NotificationBox">
+                <button type="button" class="btn position-relative rounded-5">
+                    <i class="fa-solid fa-house"></i>
+                </button>
+                <button type="button" class="btn position-relative rounded-5" id="customHideHeaderBtn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+                <button type="button" class="btn position-relative rounded-5 SearchAc" id="SearchAc">
+                    <i class="fa-solid fa-magnifying-glass" id="HeaderExit"></i>
+                </button>
+                <form class="d-flex SearchBox" role="search" id="SearchBox">
+                    <div class="search-box">
+                        <input type="search" class="search-input">
+                        <button type="submit" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="clock">
+                <i class="fas fa-clock"></i>
+                <span id="time">00:00:00</span>
+            </div>
+        </header>
+        <div class="container-fluid BodyContainer ">
+            <div class="Panel" id="rightPanel">
+                <button id="hideRightPanelBtn"> <i class="fa-solid fa-chevron-right"></i> </button>
+                <hr>
+                <a href="Rasta-Layout.html">صفحه ادمین</a>
+                <hr>
+                <a href="Rasta-CURD.html">CURD page</a>
+                <hr>
+                <a href="Rasta-Login.html">فرم ورود - ثبت‌‌‌‌ نام</a>
+                <hr>
+                <a href="#">لیست محصولات</a>
+                <hr>
+                <a href="#">پشتیبانی</a>
+                <hr>
+                <a href="#">امار بازدید</a>
+                <hr>
+                <a href="#">اکشن ایگرگ</a>
+                <hr>
+            </div>
+            <button id="showRightPanelBtn"> <i class="fa-solid fa-chevron-left"></i> </button>
+            <div class="RenderBody" id="RenderBody">
+                <div class="ForSettingPanel">
+                    <button id="customShowHeaderBtn"><i class="fa-solid fa-chevron-down"></i> </button>
+                    <button id="toggleThemePanelBtn">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="Theme-Box theme-settings-panel">
+
+                        <div class="Setting-Box">
+                            <div class="SBox">
+                                <i class="fa-solid fa-brush"></i>
+                                <div class="btn-container">
+                                    <button class="btnVTheme btn-dark" data-theme="theme-dark">
+                                        <i class="fa-solid fa-paint-roller" style="color: #c6c6c6;"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-light" data-theme="theme-light">
+                                        <i class="fa-solid fa-paint-roller"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-pink" data-theme="theme-pink">
+                                        <i class="fa-solid fa-paint-roller" style="color: #333;"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-blue" data-theme="theme-blue">
+                                        <i class="fa-solid fa-paint-roller" style="color: #c6c6c6;"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-green" data-theme="theme-green">
+                                        <i class="fa-solid fa-paint-roller" style="color: #c6c6c6;"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-red" data-theme="theme-red">
+                                        <i class="fa-solid fa-paint-roller" style="color: #c6c6c6;"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-gold" data-theme="theme-gold">
+                                        <i class="fa-solid fa-paint-roller" style="color: #c6c6c6;"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-purple-night" data-theme="theme-purple-night">
+                                        <i class="fa-solid fa-paint-roller" style="color: #c9a6ff;"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-glass" data-theme="theme-glass">
+                                        <i class="fa-solid fa-dice-d6"></i>
+                                    </button>
+                                    <button class="btnVTheme btn-glass2" data-theme="theme-glass2">
+                                        <i class="fa-solid fa-dice-d6"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="SBox">
+                                <i class="fa-solid fa-images"></i>
+                                <div class="btn-container">
+                                    <button class="btnVTheme btn-bg-green" data-bg="bg-green"></button>
+                                    <button class="btnVTheme btn-bg-black" data-bg="bg-black"></button>
+                                    <button class="btnVTheme btn-bg-blacksolid" data-bg="bg-blacksolid"></button>
+                                    <button class="btnVTheme btn-bg-blackred" data-bg="bg-blackred"></button>
+                                    <button class="btnVTheme btn-bg-blackyellow" data-bg="bg-blackyellow"></button>
+                                    <button class="btnVTheme btn-bg-pink" data-bg="bg-pink"></button>
+                                    <button class="btnVTheme btn-bg-pinksolid" data-bg="bg-pinksolid"></button>
+                                    <button class="btnVTheme btn-bg-blue" data-bg="bg-blue"></button>
+                                    <button class="btnVTheme btn-bg-bluesolid" data-bg="bg-bluesolid"></button>
+                                    <button class="btnVTheme btn-bg-bluepurple" data-bg="bg-bluepurple"></button>
+                                    <button class="btnVTheme btn-bg-whitesolid" data-bg="bg-whitesolid"></button>
+                                    <button class="btnVTheme btn-bg-gray" data-bg="bg-gray"></button>
+                                    <button class="btnVTheme btn-bg-gold" data-bg="bg-gold"></button>
+                                    <button class="btnVTheme btn-bg-blood" data-bg="bg-blood"></button>
+                                    <button class="btnVTheme btn-bg-water" data-bg="bg-water"></button>
+                                    <button class="btnVTheme btn-bg-texture-1" data-bg="bg-texture-1"></button>
+                                    <button class="btnVTheme btn-bg-texture-2" data-bg="bg-texture-2"></button>
+                                    <button class="btnVTheme btn-bg-texture-3" data-bg="bg-texture-3"></button>
+                                    <button class="btnVTheme btn-bg-texture-4" data-bg="bg-texture-4"></button>
+                                    <button class="btnVTheme btn-bg-texture-5" data-bg="bg-texture-5"></button>
+                                </div>
+                            </div>
+                            <div class="SBox">
+                                <i class="fa-solid fa-border-top-left"></i>
+                                <div class="btn-container">
+                                    <button class="btnShadow shadow-black" data-shadow="Black"></button>
+                                    <button class="btnShadow shadow-white" data-shadow="White"></button>
+                                    <button class="btnShadow shadow-blue" data-shadow="blue"></button>
+                                    <button class="btnShadow shadow-red" data-shadow="red"></button>
+                                    <button class="btnShadow shadow-green" data-shadow="green"></button>
+                                    <button class="btnShadow shadow-orange" data-shadow="orange"></button>
+                                    <button class="btnShadow shadow-purple" data-shadow="purple"></button>
+                                    <button class="btnShadow shadow-gold" data-shadow="gold"></button>
+                                    <button class="btnShadow shadow-cyan" data-shadow="cyan"></button>
+                                    <button class="btnShadow shadow-magenta" data-shadow="magenta"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- !!! Put Here RenderBody() !!! -->
+
+                <div class="Theme-List">
+                    <table class="table"
+                        style="border-radius: 5px; overflow: hidden; background: none !important; border-collapse: collapse; margin-top: 10px;">
+                        <tr>
+                            <button class="ThemeBtn ThemeBtn-C"> افزودن محصول </button>
+                            <th>
+                                نام محصول
+                            </th>
+                            <th>
+                                کد محصول
+                            </th>
+                            <th>
+                                تاریخ
+                            </th>
+                            <th>
+                                تصویر
+                            </th>
+                            <th>
+                                تخفیف
+                            </th>
+                            <th>
+                                عملیات
+                            </th>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        ازمایشی
+                                    </td>
+                                    <td>
+                                        P-W34SF
+                                    </td>
+                                    <td>
+                                        1404/01/01
+                                    </td>
+                                    <td>
+                                        <img src="Bag/TX1.jpg" alt="محصول">
+                                    </td>
+                                    <td>
+                                        20%
+                                    </td>
+                                    <td>
+                                        <button class="ThemeBtn ThemeBtn-S"> نمایش </button>
+                                        <button class="ThemeBtn ThemeBtn-E"> ویرایش </button>
+                                        <button class="ThemeBtn ThemeBtn-D"> حذف </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        تمرکز
+                                    </td>
+                                    <td>
+                                        P-G49F4
+                                    </td>
+                                    <td>
+                                        1404/01/02
+                                    </td>
+                                    <td>
+                                        <img src="Bag/TX2.jpg" alt="محصول">
+                                    </td>
+                                    <td>
+                                        30%
+                                    </td>
+                                    <td>
+                                        <button class="ThemeBtn ThemeBtn-S"> نمایش </button>
+                                        <button class="ThemeBtn ThemeBtn-E"> ویرایش </button>
+                                        <button class="ThemeBtn ThemeBtn-D"> حذف </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <!-- Fake pagination !!! -->
+                    <nav class="pagination">
+                        <ul>
+                            <li class="prev disabled"><a href="#">&#10094;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="next"><a href="#">&#10095;</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="Theme-warning">
+                    <h3> هشدار یا اطلاعات شما برای مدیر سایت.... </h3>
+                </div>
+
+                <div class="ThemeAdd">
+                    <h4 class="Theme-Title text-center"> افزودن محصول </h4>
+                    <div class="Theme-Warnings">لطفا تمامی فیلدها را پر کنید!</div>
+                    <hr>
+                    <form class="Theme-crud-form">
+                        <label for="title">*عنوان:</label>
+                        <input type="text" id="title" name="title" class="Theme-Required">
+                        
+                        <label for="description">توضیحات:</label>
+                        <textarea id="description" name="description" rows="4" required
+                        placeholder="متن آزمایشی "></textarea>
+                        
+                        <label for="category">*دسته‌بندی:</label>
+                        <select id="category" name="category" class="Theme-Required">
+                            <option value="option1">گزینه ۱</option>
+                            <option value="option2">گزینه ۲</option>
+                            <option value="option3">گزینه ۳</option>
+                        </select>
+
+                        <label for="date">*تاریخ:</label>
+                        <input type="date" id="date" name="date" required class="Theme-Required">
+                        
+                        <label for="file">*آپلود فایل:</label>
+                        <input type="file" id="file" name="file" class="Theme-Required"
+                        style="padding-bottom: 39px !important; margin-bottom: 5px;">
+                        <div class="Theme-Warnings" style="margin-top: -13px; padding-top: 0;">فرمت تصویر میبایست jpg باشد!</div>
+
+                        <div class="buttons text-center">
+                            <a class="ThemeBtn Btn-Classic-2"> انصراف</a>
+                            <button type="submit" class="ThemeBtn Btn-Classic"> افزودن </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Js/Rasta-JavaScript.js"></script>
+    <script src="Js/Rasta-Panels.js"></script>
+</body>
+
+<style>
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .pagination ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+    }
+
+    .pagination li {
+        display: inline-block;
+        padding: 8px 12px;
+        background: var(--searchBox-bg);
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    .pagination li a {
+        text-decoration: none;
+        color: var(--primary-text);
+        font-weight: bold;
+    }
+
+    .pagination li:hover {
+        background: var(--third-color);
+        color: white;
+    }
+
+    .pagination .active {
+        background: var(--third-color);
+        color: white;
+    }
+
+    .pagination .prev.disabled,
+    .pagination .next.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+</style>
+
+</html>

@@ -1,0 +1,558 @@
+:root {
+    --searchBox-bg: #2d2d2d;
+    --box-bg: linear-gradient(to bottom, #1A1A1D, #2A2A2E);
+    --primary-text: #ffffff;
+    --primary-text-hover: #ffffff;
+    --hover-light: #f1f1f1;
+    --secondry-color: #787586;
+    --third-color: #FFB200;
+    --icon-color: #ffffff;
+    --button-color-text: #fff;
+    --button-color: #F5A623;
+    --button-color-hover: #a5772d;
+    --button-color-re: #FBFBFB;
+    --button-color-re-hover: #c0c0c0;
+    --primary-text-re: #333;
+    --thumb-color: #000;
+    --border-color: #f5a52372;
+    --warning-color: #A62C2C;
+    --chart-text: #ffffff;
+    --Monthly: #EB5A3C;
+    --Weekly: #D98324;
+    --Daily: #155E95;
+    --active-user: #1c5332;
+    --none-active: #839c8a;
+}
+
+.theme-dark {
+    --searchBox-bg: #2d2d2d;
+    --box-bg: linear-gradient(to bottom, #1A1A1D, #2A2A2E);
+    --primary-text: #f3f3f3;
+    --primary-text-hover: #ffffff;
+    --hover-light: #f1f1f1;
+    --secondry-color: #FFB200;
+    --third-color: #FFB200;
+    --icon-color: #ffffff;
+    --icon-color-hover: #FFB200;
+    --button-color-text: #fff;
+    --button-color: #F5A623;
+    --button-color-hover: #a5772d;
+    --button-color-re: #FBFBFB;
+    --button-color-re-hover: #c0c0c0;
+    --primary-text-re: #333;
+    --thumb-color: #000;
+    --border-color: #f5a52372;
+    --warning-color: #A62C2C;
+    --chart-text: #ffffff;
+    --Monthly: #686D76;
+    --Weekly: #6D5D6E;
+    --Daily: #6B728E;
+    --active-user: #939185;
+    --none-active: #72737270;
+}
+
+
+.theme-light {
+    --searchBox-bg: rgba(145, 142, 142, 0.5);
+    --box-bg: #F5F5F5;
+    --primary-text: #252525;
+    --primary-text-hover: #000000;
+    --primary-text-re: #333;
+    --hover-light: #a0429a;
+    --secondry-color: #9b9b9b;
+    --third-color: linear-gradient(129deg, #A24E87, #8E44AD);
+    --icon-color: #a0429a;
+    --icon-color-hover: #71176b;
+    --button-color-text: #fff;
+    --button-color: #a0429a;
+    --button-color-hover: #83227d;
+    --button-color-re: #cecece;
+    --button-color-re-hover: #9c9c9c;
+    --primary-text-re: #333;
+    --thumb-color: #444;
+    --border-color: #a0429a88;
+    --warning-color: #d52c2c;
+    --chart-text: #111;
+    --Monthly: #de67b2;
+    --Weekly: #F19ED2;
+    --Daily: #E8C5E5;
+    --active-user: #a0429a;
+    --none-active: #887186;
+}
+
+
+.theme-pink {
+    --searchBox-bg: #F0F0F0;
+    --box-bg: linear-gradient(45deg, #FBC2EB, #A6C1EE);
+    --primary-text: #222;
+    --primary-text-hover: #000000;
+    --hover-light: #ff74d1;
+    --secondry-color: #8a1465;
+    --third-color: #fff;
+    --icon-color: #aa307f;
+    --icon-color-hover: #71176b;
+    --button-color-text: #fff;
+    --button-color: #aa307f;
+    --button-color-hover: #872063;
+    --button-color-re: #cecece;
+    --button-color-re-hover: #969696;
+    --primary-text-re: #333;
+    --thumb-color: #b370a0;
+    --border-color: #872063a4;
+    --warning-color: #A62C2C;
+    --chart-text: #000;
+    --Monthly: #de67b2;
+    --Weekly: #F19ED2;
+    --Daily: #a6469e;
+    --active-user: #a0429a;
+    --none-active: #887186;
+}
+
+
+.theme-blue {
+    --searchBox-bg: #e0e0e0ac;
+    --box-bg: linear-gradient(124deg, #3D7FF9, #2a2d89);
+    --primary-text: #121212;
+    --primary-text-hover: #000000;
+    --hover-light: #00b4ff;
+    --secondry-color: #222;
+    --third-color: #1b138c;
+    --icon-color: #ffffff;
+    --icon-color-hover: #00ddff;
+    --button-color-text: #fff;
+    --button-color: #4448bc;
+    --button-color-re: #c2c2c2;
+    --primary-text-re: #333;
+    --button-color: #4584ff;
+    --button-color-hover: #3067d4;
+    --button-color-re: #cecece;
+    --button-color-re-hover: #9d9d9d;
+    --primary-text-re: #333;
+    --thumb-color: #002385;
+    --border-color: #adb6ed;
+    --warning-color: #0cedd6;
+    --chart-text: #ffffff;
+    --Monthly: #46d0b0;
+    --Weekly: #00b5b9;
+    --Daily: #0097c0;
+    --active-user: #261FB3;
+    --none-active: #515483;
+}
+
+.theme-green {
+    --searchBox-bg: #c4c4c4;
+    --box-bg: linear-gradient(46deg, #1D503A, #1f6245);
+    --primary-text: #191919;
+    --primary-text-hover: #000000;
+    --hover-light: #032a19;
+    --secondry-color: #fff;
+    --third-color: #797979;
+    --icon-color: #fafafa;
+    --icon-color-hover: #ffffff;
+    --button-color-text: #fff;
+    --button-color: #4f8269;
+    --button-color-hover: #316f51;
+    --button-color-re: #cecece;
+    --button-color-re-hover: #9d9d9d;
+    --primary-text-re: #333;
+    --thumb-color: #538254;
+    --border-color: #599b36;
+    --warning-color: #800a0a;
+    --chart-text: #ffffff;
+    --Monthly: #89AC46;
+    --Weekly: #5DB996;
+    --Daily: #5CB338;
+    --active-user: #34b862;
+    --none-active: #b1b7b5;
+}
+
+.theme-glass {
+    --searchBox-bg: #bcbcbccb;
+    --box-bg: rgba(165, 165, 165, 0.35);
+    --primary-text: #151515;
+    --primary-text-hover: #000000;
+    --secondry-color: #fff;
+    --hover-light: #282828;
+    --third-color: #FAF6EF;
+    --icon-color: #ffffff;
+    --icon-color-hover: #d7e3ff;
+    --button-color-text: #151515;
+    --button-color: #e2e2e2;
+    --button-color-hover: #fff;
+    --button-color-re: #c1c1c1;
+    --button-color-re-hover: #ebebeb;
+    --primary-text-re: #333;
+    --thumb-color: #353535;
+    --border-color: #202020;
+    --warning-color: #800a0a;
+    --chart-text: #000;
+    --Monthly: #EB5A3C;
+    --Weekly: #D98324;
+    --Daily: #155E95;
+    --active-user: #1c5332;
+    --none-active: #839c8a;
+}
+
+.theme-glass2 {
+    --searchBox-bg: #e0e0e0a8;
+    --box-bg: linear-gradient(250deg, #2c3e506b, #ecf0f177);
+    --primary-text: #121212;
+    --primary-text-hover: #000000;
+    --hover-light: #ecf0f1;
+    --secondry-color: #081929;
+    --third-color: #FAF6EF;
+    --icon-color: #ffffff;
+    --icon-color-hover: #e8e9ff;
+    --button-color-text: #000;
+    --button-color: #e2e2e2;
+    --button-color-hover: #fff;
+    --button-color-re: #c1c1c1;
+    --button-color-re-hover: #ebebeb;
+    --primary-text-re: #333;
+    --thumb-color: #454d55d7;
+    --border-color: #505050;
+    --warning-color: #800a0a;
+    --chart-text: #111;
+    --Monthly: #EB5A3C;
+    --Weekly: #D98324;
+    --Daily: #155E95;
+    --active-user: #1c5332;
+    --none-active: #839c8a;
+}
+
+.theme-red {
+    --searchBox-bg: #3a0f11;
+    --box-bg: linear-gradient(290deg, #601010, #40080a);
+    --primary-text: #e6e6e6;
+    --primary-text-hover: #fff;
+    --hover-light: #ad1212;
+    --secondry-color: #8c1c1c;
+    --third-color: #b12f2f;
+    --icon-color: #ffffff;
+    --icon-color-hover: #b4b4b4;
+    --button-color-text: #fff;
+    --button-color: #98433a;
+    --button-color-hover: #7c3028;
+    --button-color-re: #cecece;
+    --button-color-re-hover: #9d9d9d;
+    --primary-text-re: #333;
+    --thumb-color: #7c3028;
+    --border-color: #b73329;
+    --warning-color: #f06262;
+    --chart-text: #ffffff;
+    --Monthly: #A31D1D;
+    --Weekly: #BE3144;
+    --Daily: #F93827;
+    --active-user: #E52020;
+    --none-active: #b37878;
+}
+
+.theme-gold {
+    --searchBox-bg: #604221;
+    --box-bg: linear-gradient(110deg, #8c6a1f, #d4af37);
+    --primary-text: #efefef;
+    --primary-text-hover: #fff;
+    --hover-light: #dfe0df;
+    --secondry-color: #000000;
+    --third-color: #ac6713;
+    --icon-color: #ffffff;
+    --icon-color-hover: #ffffff;
+    --button-color-text: #fbfbfb;
+    --button-color: #d9a21b;
+    --button-color-hover: #ffb700;
+    --button-color-re: #cecece;
+    --button-color-re-hover: #e7e7e7;
+    --primary-text-re: #333;
+    --thumb-color: #d9a21b;
+    --border-color: #ffb35a;
+    --warning-color: #A62C2C;
+    --chart-text: #111;
+    --Monthly: #ec6c03;
+    --Weekly: #F0A500;
+    --Daily: #c8b310;
+    --active-user: #E14D2A;
+    --none-active: #a87b59;
+}
+
+.theme-purple-night {
+    --searchBox-bg: #2e1340;
+    --box-bg: linear-gradient(250deg, #3b1e5e, #5a2a7a);
+    --primary-text: #d3bff2;
+    --primary-text-hover: #fff;
+    --hover-light: #c9a6ff;
+    --secondry-color: #8a56b6;
+    --third-color: #a97efc;
+    --icon-color: #ffffff;
+    --icon-color-hover: #d2a8ff;
+    --button-color-text: #fcfcfc;
+    --button-color: #836594;
+    --button-color-hover: #9c57c4;
+    --button-color-re: #cecece;
+    --button-color-re-hover: #ffffff;
+    --primary-text-re: #333;
+    --thumb-color: #6d4c91;
+    --border-color: #6d4c91;
+    --warning-color: #A62C2C;
+    --chart-text: #ffffff;
+    --Monthly: #605EA1;
+    --Weekly: #6a3880;
+    --Daily: #8174A0;
+    --active-user: #F7374F;
+    --none-active: #b1757c;
+}
+
+/* دکمه‌ها */
+.btn-red {
+    background: linear-gradient(250deg, #601010, #40080a);
+}
+
+.btn-purple-night {
+    background: linear-gradient(250deg, #3b1e5e, #5a2a7a);
+}
+
+.btn-gold {
+    background: linear-gradient(250deg, #8c6a1f, #d4af37);
+}
+
+.bg-green,
+.btn-bg-green {
+    background: linear-gradient(to right, #0f9b0f, #d4af37);
+}
+
+.bg-black {
+    background: linear-gradient(to top, #2c2c2c, #111111);
+}
+
+.bg-blacksolid {
+    background: linear-gradient(to right, #151515, #222222);
+}
+
+.bg-blackred {
+    background: linear-gradient(to right, #000000, #700606f6);
+}
+
+.bg-blackyellow {
+    background: linear-gradient(to bottom, #000000, #664e05, #e6af2e);
+}
+
+.btn-bg-black {
+    background: linear-gradient(to top, #2c2c2c, #111111);
+}
+
+.btn-bg-blacksolid {
+    background: linear-gradient(to right, #000, #222222);
+}
+
+.btn-bg-blackred {
+    background: linear-gradient(to right, #000000, #8B0000);
+}
+
+.btn-bg-blackyellow {
+    background: linear-gradient(to bottom, #000000, #664e05, #e6af2e);
+}
+
+.bg-pink {
+    background: linear-gradient(to right, #2e2e2e, #C6549F, #A6C1EE);
+}
+
+.bg-pinksolid {
+    background: linear-gradient(to bottom, #A6C1EE, #FBC2EB);
+}
+
+.btn-bg-pink {
+    background: linear-gradient(to right, #2e2e2e, #C6549F, #A6C1EE);
+}
+
+.btn-bg-pinksolid {
+    background: linear-gradient(to bottom, #A6C1EE, #FBC2EB);
+}
+
+.bg-blue {
+    background: linear-gradient(to bottom, #002f6c, #0066cc, #ffffff);
+}
+
+.bg-bluesolid {
+    background: linear-gradient(to right, #1b138c, #3D7FF9);
+}
+
+.bg-bluepurple {
+    background: linear-gradient(135deg, #1b138c, #6a11cb, #2575fc);
+}
+
+.btn-bg-blue {
+    background: linear-gradient(to bottom, #002f6c, #0066cc, #ffffff);
+}
+
+.btn-bg-bluesolid {
+    background: linear-gradient(to right, #1b138c, #3D7FF9);
+}
+
+.btn-bg-bluepurple {
+    background: linear-gradient(135deg, #1b138c, #6a11cb, #2575fc);
+}
+
+/* دکمه‌های شفاف و با بافت */
+.bg-texture-1,
+.btn-bg-texture-1 {
+    background-image: url(/Bag/TX1.jpg);
+    background-size: cover;
+}
+
+.bg-texture-2,
+.btn-bg-texture-2 {
+    background-image: url(/Bag/TX2.jpg);
+    background-size: cover;
+}
+
+.bg-texture-3,
+.btn-bg-texture-3 {
+    background-image: url(/Bag/TX3.jpg);
+    background-size: cover;
+}
+
+.bg-texture-4,
+.btn-bg-texture-4 {
+    background-image: url(/Bag/TX4.jpg);
+    background-size: cover;
+}
+
+.bg-texture-5,
+.btn-bg-texture-5 {
+    background-image: url(/Bag/TX5.jpg);
+    background-size: cover;
+}
+
+/* دکمه‌های حالت شیشه‌ای */
+.btn-glass {
+    background: rgba(165, 165, 165, 0.52);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+}
+
+.btn-glass2 {
+    background: linear-gradient(45deg, #2C3E50, #ECF0F1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+}
+
+.bg-blue {
+    background: linear-gradient(to bottom, #002f6c, #0066cc, #ffffff);
+}
+
+.bg-bluesolid {
+    background: linear-gradient(to right, #1b138c, #3D7FF9);
+}
+
+.bg-bluepurple {
+    background: linear-gradient(135deg, #1b138c, #6a11cb, #2575fc);
+}
+
+.btn-bg-blue {
+    background: linear-gradient(to bottom, #002f6c, #0066cc, #ffffff);
+}
+
+.btn-bg-bluesolid {
+    background: linear-gradient(to right, #1b138c, #3D7FF9);
+}
+
+.btn-bg-bluepurple {
+    background: linear-gradient(135deg, #1b138c, #6a11cb, #2575fc);
+}
+
+.bg-whitesolid,
+.btn-bg-whitesolid {
+    background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+}
+
+.bg-gray,
+.btn-bg-gray {
+    background: radial-gradient(circle, #e5e5e5, #b3b3b3);
+}
+
+.bg-gold,
+.btn-bg-gold {
+    background: linear-gradient(to bottom, #111, #2b2b2b, #d4af37);
+}
+
+.bg-blood,
+.btn-bg-blood {
+    background: #722F38;
+}
+
+.bg-water,
+.btn-bg-water {
+    background: #536978;
+}
+
+.btn-dark {
+    background: linear-gradient(to bottom, #1A1A1D, #2A2A2E);
+}
+
+.btn-light {
+    background: #E0E0E0;
+}
+
+.btn-pink {
+    background: linear-gradient(to bottom, #FBC2EB, #A6C1EE);
+}
+
+.btn-blue {
+    background: linear-gradient(46deg, #3D7FF9, #2a2d89);
+}
+
+.btn-green {
+    background: linear-gradient(46deg, #1D503A, #1f6245);
+}
+
+
+.shadow-black {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    --shadow-border: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.shadow-white {
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(189, 189, 189) 0px 0px 0px 3px;
+    --shadow-border: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(189, 189, 189) 0px 0px 0px 3px;
+}
+
+.shadow-blue {
+    box-shadow: rgba(23, 32, 156, 0.627) 0px 1px 4px, rgb(15, 99, 118) 0px 0px 0px 3px;
+    --shadow-border: rgba(23, 32, 156, 0.627) 0px 1px 4px, rgb(15, 99, 118) 0px 0px 0px 3px;
+}
+
+.shadow-red {
+    box-shadow: rgba(156, 23, 23, 0.6) 0px 1px 4px, rgb(118, 15, 15) 0px 0px 0px 3px;
+    --shadow-border: rgba(156, 23, 23, 0.6) 0px 1px 4px, rgb(118, 15, 15) 0px 0px 0px 3px;
+}
+
+.shadow-green {
+    box-shadow: rgba(23, 156, 32, 0.6) 0px 1px 4px, rgb(15, 118, 45) 0px 0px 0px 3px;
+    --shadow-border: rgba(23, 156, 32, 0.6) 0px 1px 4px, rgb(15, 118, 45) 0px 0px 0px 3px;
+}
+
+.shadow-orange {
+    box-shadow: rgba(255, 140, 0, 0.6) 0px 1px 4px, rgb(180, 90, 0) 0px 0px 0px 3px;
+    --shadow-border: rgba(255, 140, 0, 0.6) 0px 1px 4px, rgb(180, 90, 0) 0px 0px 0px 3px;
+}
+
+.shadow-purple {
+    box-shadow: rgba(128, 0, 128, 0.6) 0px 1px 4px, rgb(85, 0, 85) 0px 0px 0px 3px;
+    --shadow-border: rgba(128, 0, 128, 0.6) 0px 1px 4px, rgb(85, 0, 85) 0px 0px 0px 3px;
+}
+
+.shadow-gold {
+    box-shadow: rgba(255, 215, 0, 0.6) 0px 1px 4px, rgb(184, 134, 11) 0px 0px 0px 3px;
+    --shadow-border: rgba(255, 215, 0, 0.6) 0px 1px 4px, rgb(184, 134, 11) 0px 0px 0px 3px;
+}
+
+.shadow-cyan {
+    box-shadow: rgba(0, 255, 255, 0.6) 0px 1px 4px, rgb(0, 128, 128) 0px 0px 0px 3px;
+    --shadow-border: rgba(0, 255, 255, 0.6) 0px 1px 4px, rgb(0, 128, 128) 0px 0px 0px 3px;
+}
+
+.shadow-magenta {
+    box-shadow: rgba(255, 0, 255, 0.6) 0px 1px 4px, rgb(139, 0, 139) 0px 0px 0px 3px;
+    --shadow-border: rgba(255, 0, 255, 0.6) 0px 1px 4px, rgb(139, 0, 139) 0px 0px 0px 3px;
+}
