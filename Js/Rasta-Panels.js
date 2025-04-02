@@ -1,8 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // مدیریت هدر
   const headerElement = document.getElementById("customHeader");
   const hideHeaderBtn = document.getElementById("customHideHeaderBtn");
   const showHeaderBtn = document.getElementById("customShowHeaderBtn");
+
+  function initializeHeader() {
+    headerElement.classList.add("no-transition");
+
+    const headerStatus = localStorage.getItem("headerStatus");
+    if (headerStatus === "hidden") {
+      headerElement.classList.add("headerHidden");
+      showHeaderBtn.style.display = "block";
+    } else {
+      headerElement.classList.remove("headerHidden");
+      showHeaderBtn.style.display = "none";
+    }
+
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        headerElement.classList.remove("no-transition");
+      }, 50);
+    });
+  }
 
   function updateShowButton() {
     if (headerElement.classList.contains("headerHidden")) {
@@ -24,17 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
     updateShowButton();
   });
 
-  window.addEventListener("load", function () {
-    const headerStatus = localStorage.getItem("headerStatus");
-    if (headerStatus === "hidden") {
-      headerElement.classList.add("headerHidden");
-    } else {
-      headerElement.classList.remove("headerHidden");
-    }
-    updateShowButton();
-  });
+  initializeHeader();
 
-  // مدیریت پنل راست
   const rightPanel = document.getElementById("rightPanel");
   const hideRightPanelBtn = document.getElementById("hideRightPanelBtn");
   const showRightPanelBtn = document.getElementById("showRightPanelBtn");
@@ -93,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     checkScreenWidth();
   });
 
-  // مدیریت انتخاب تم‌ها
+  // مدیریت انتخاب تم‌ها (بدون تغییر)
   const themeButtons = document.querySelectorAll(".btnVTheme[data-theme]");
   themeButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -115,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // مدیریت انتخاب پس‌زمینه‌ها
+  // مدیریت انتخاب پس‌زمینه‌ها (بدون تغییر)
   const bgButtons = document.querySelectorAll(".btnVTheme[data-bg]");
   bgButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -164,7 +173,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // مدیریت پنل تم
   const panel = document.querySelector(".theme-settings-panel");
   const button = document.getElementById("toggleThemePanelBtn");
   const icon = button.querySelector("i");
@@ -188,4 +196,76 @@ document.addEventListener("DOMContentLoaded", function () {
 
     localStorage.setItem("themePanelOpen", panel.classList.contains("open"));
   });
+
+  window.addEventListener("beforeunload", function () {
+    headerElement.classList.add("no-transition");
+    rightPanel.classList.add("no-transition");
+  });
+});
+
+const rightPanel = document.getElementById("rightPanel");
+const hideRightPanelBtn = document.getElementById("hideRightPanelBtn");
+const showRightPanelBtn = document.getElementById("showRightPanelBtn");
+
+function initializeRightPanel() {
+  rightPanel.classList.add("initial-load");
+
+  const rightPanelStatus = localStorage.getItem("rightPanelStatus");
+  const isMobile = window.innerWidth < 1024;
+
+  if (isMobile || rightPanelStatus === "hidden") {
+    rightPanel.classList.remove("show");
+    showRightPanelBtn.style.display = "block";
+  } else {
+    rightPanel.classList.add("show");
+    showRightPanelBtn.style.display = "none";
+  }
+
+  // حذف کلاس initial-load بعد از رندر اولیه
+  requestAnimationFrame(() => {
+    setTimeout(() => {
+      rightPanel.classList.remove("initial-load");
+    }, 50);
+  });
+}
+
+function checkScreenWidth() {
+  const isMobile = window.innerWidth < 1024;
+  const wasMobile = localStorage.getItem("wasMobile") === "true";
+
+  if (isMobile && !wasMobile) {
+    rightPanel.classList.remove("show");
+    showRightPanelBtn.style.display = "block";
+    localStorage.setItem("rightPanelStatus", "hidden");
+  } else if (!isMobile && wasMobile) {
+    const rightPanelStatus = localStorage.getItem("rightPanelStatus");
+    if (rightPanelStatus !== "hidden") {
+      rightPanel.classList.add("show");
+      showRightPanelBtn.style.display = "none";
+    }
+  }
+
+  localStorage.setItem("wasMobile", isMobile);
+}
+
+hideRightPanelBtn.addEventListener("click", function () {
+  rightPanel.classList.remove("show");
+  localStorage.setItem("rightPanelStatus", "hidden");
+  showRightPanelBtn.style.display = "block";
+});
+
+showRightPanelBtn.addEventListener("click", function () {
+  rightPanel.classList.add("show");
+  localStorage.setItem("rightPanelStatus", "visible");
+  showRightPanelBtn.style.display = "none";
+});
+
+initializeRightPanel();
+
+window.addEventListener("resize", function () {
+  checkScreenWidth();
+});
+
+window.addEventListener("beforeunload", function () {
+  rightPanel.classList.add("initial-load");
 });

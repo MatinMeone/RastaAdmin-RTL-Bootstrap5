@@ -51,8 +51,13 @@
                 <a href="#"> بیشتر </a>
                 <hr>
             </div>
+
             <button id="showRightPanelBtn"> <i class="fa-solid fa-chevron-left"></i> </button>
             <div class="RenderBody" id="RenderBody">
+
+                <!-- You can hide this section. -->
+                <!-- > -->
+                <!-- شما می‌توانید این بخش را مخفی کنید تا کدها براتون تمیزتر باشه -->
                 <div class="ForSettingPanel">
                     <button id="customShowHeaderBtn"><i class="fa-solid fa-chevron-down"></i> </button>
                     <button id="toggleThemePanelBtn">
@@ -143,6 +148,7 @@
 
                 <!-- !!! Put Here RenderBody() !!! -->
 
+                <!-- ^^^ Put Here RenderBody() ^^^ -->
 
                 <div class="Theme-Box Theme-AdminProfile Theme-Box-Small">
                     <img src="Bag/AdminDefualt.jpg">
@@ -170,9 +176,6 @@
                     <canvas id="visitsChart"></canvas>
                 </div>
 
-
-
-
                 <div class="Theme-Comment Theme-Box Theme-Box-Small Theme-Text">
                     <i class="fa-solid fa-comment"></i>
                     <div class="Theme-CommentBox">
@@ -182,13 +185,11 @@
                     </div>
                 </div>
 
-
-
                 <div class="Theme-Box Theme-Box-Small" style="width: 100px !important; height: 100px !important;">
                     <canvas id="userActivityChart"></canvas>
                 </div>
 
-                <div class="Theme-Box" style="padding: 6px;">
+                <div class="Theme-Box" style="padding: 6px; height: max-content !important;">
                     <img src="" id="daily-img">
                     <div class="d-flex">
                         <i class="fa-solid fa-image Theme-Text h4 me-1" style="margin-top: 13px;"></i>
@@ -210,8 +211,7 @@
                     </div>
                 </div>
 
-
-                <div class="Theme-Box"></div>
+                <div class="Theme-Box"> </div>
                 <div class="Theme-Box"></div>
                 <div class="Theme-Box"></div>
                 <div class="Theme-Box"></div>
@@ -231,7 +231,7 @@
     <script src="Js/Rasta-Panels.js"></script>
 </body>
 
-<!-- Fake Pagination -->
+<!-- Fake Pagination Style -->
 <style>
     .pagination {
         display: flex;

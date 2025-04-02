@@ -1,3 +1,18 @@
+/*||| 
+
+--General _15
+--Containers-Style _42
+--Header _95
+--Right-Panel _306
+--Scroll-Style _457
+--Switch-Input _485
+--Theme-Panel-Settin _541
+
+|||*/
+
+
+/* ================================================================================================================== */
+/* <<<- General ->>>*/
 * {
     padding: 0;
     margin: 0;
@@ -23,6 +38,8 @@ body {
     background-position: center;
 }
 
+/* ================================================================================================================== */
+/* <<<- Containers-Style ->>> */
 .Main-container {
     height: 100vh;
     padding: 6px;
@@ -30,6 +47,52 @@ body {
     flex-direction: column;
 }
 
+.BodyContainer {
+    width: 100% !important;
+    height: 90%;
+    padding: 4px;
+    padding-top: 8px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.RenderBody {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    padding-left: 8px;
+    margin-right: 6px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow-border);
+}
+
+@media (max-width:1024px) {
+    .Main-container {
+        padding-right: 8.5px;
+    }
+
+    .RenderBody {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:320px) {
+    .Main-container {
+        padding: 4px;
+    }
+}
+
+
+/* ================================================================================================================== */
+/* <<<- Header ->>> */
 header {
     width: 100%;
     height: 65px !important;
@@ -142,41 +205,41 @@ input::-webkit-search-results-decoration {
 }
 
 #customHeader {
-    transition: transform 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
 }
 
-.no-transition * {
+.no-transition {
     transition: none !important;
 }
-
 
 .headerHidden {
     transform: translateY(-100%);
     opacity: 0;
-    margin-top: -85px;
-    margin-bottom: 15px;
+    margin-top: -85px !important;
+    margin-bottom: 16px;
 }
 
 #customHeader.showHeader {
     transform: translateY(0);
     opacity: 1;
-    margin-top: 0;
+    margin-top: 0 !important;
+    pointer-events: auto;
 }
 
 
 #customShowHeaderBtn {
     position: absolute;
-    top: -8.75px;
+    top: -8px;
     left: 140px;
-    z-index: 99999999999999999999;
+    z-index: 999999;
     width: 60px;
     background: var(--box-bg);
     outline: none;
     border: none;
     border-radius: 0 0 6px 6px;
     transition: transform 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 #customShowHeaderBtn i {
@@ -189,18 +252,58 @@ input::-webkit-search-results-decoration {
 }
 
 
-.BodyContainer {
-    width: 100% !important;
-    height: 90%;
-    padding: 4px;
-    padding-top: 8px;
-    padding-right: 0px;
+.NotificationBox {
+    width: max-content;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 1;
+    align-items: center;
+
 }
 
+.NotificationBox>button {
+    font-size: 18px;
+    color: var(--icon-color);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+}
+
+.NotificationBox>button i {
+    transition: all ease .3s;
+}
+
+.NotificationBox>button:hover i {
+    transition: .3s;
+    color: var(--icon-color-hover);
+}
+
+@media (max-width:768px) {
+    header {
+        overflow: hidden;
+    }
+
+    #SearchBox {
+        transition: .8s;
+        width: 0;
+    }
+
+    .SearchAc {
+        display: flex !important;
+    }
+}
+
+@media (max-width:375px) {
+    .SearchEx {
+        width: 150px !important;
+    }
+}
+
+/* ================================================================================================================== */
+/* <<<- Right-Panel ->>> */
 .Panel {
     width: 260px;
     height: 80%;
@@ -219,7 +322,7 @@ input::-webkit-search-results-decoration {
     z-index: 1800;
     overflow-y: auto;
     overflow-x: hidden;
-
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .Panel a {
@@ -254,116 +357,9 @@ input::-webkit-search-results-decoration {
     transition: .3s;
 }
 
-.RenderBody {
-    width: 100%;
-    height: 100%;
-    padding: 8px;
-    padding-left: 8px;
-    margin-right: 6px;
-    border-radius: 12px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: var(--shadow-border);
+#rightPanel.initial-load {
+    transition: none !important;
 }
-
-.NotificationBox {
-    width: max-content;
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-}
-
-.NotificationBox>button {
-    font-size: 18px;
-    color: var(--icon-color);
-    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 3px;
-}
-
-.NotificationBox>button i {
-    transition: all ease .3s;
-}
-
-.NotificationBox>button:hover i {
-    transition: .3s;
-    color: var(--icon-color-hover);
-}
-
-@media (max-width:1024px) {
-    .Main-container {
-        padding-right: 8.5px;
-    }
-
-    .RenderBody {
-        margin-right: 0px;
-    }
-
-
-}
-
-@media (max-width:768px) {
-    header {
-        overflow: hidden;
-    }
-
-    #SearchBox {
-        transition: .8s;
-        width: 0;
-    }
-
-    .SearchAc {
-        display: flex !important;
-    }
-}
-
-@media (max-width:375px) {
-    .SearchEx {
-        width: 150px !important;
-    }
-}
-
-@media (max-width:320px) {
-    .Main-container {
-        padding: 4px;
-    }
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-    padding-left: 2px;
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    box-shadow: inset 0 0 3px grey;
-    margin: 2px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 12px;
-    background: #111;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--searchBox-bg);
-    z-index: 20000;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--thumb-color);
-    transition: background-color ease 0.3s;
-}
-
-
 
 #rightPanel {
     position: relative;
@@ -371,9 +367,14 @@ input::-webkit-search-results-decoration {
     height: 100%;
     margin-right: -310px;
     margin-left: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s ease, visibility 0.6s, opacity 0.6s;
 }
 
 #rightPanel.show {
+    visibility: visible;
+    opacity: 1;
     margin: 0 1px 0 4px;
 }
 
@@ -388,28 +389,10 @@ input::-webkit-search-results-decoration {
     outline: none;
     border: none;
     border-radius: 6px 0 0 6px;
-    transition: transform 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
+    transition: all 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     z-index: 999;
     transition: .3s;
-}
-
-@media (max-width:320px) {
-    #showRightPanelBtn {
-        right: 4px !important;
-    }
-}
-
-@media (max-width:1215px) {
-    #showRightPanelBtn {
-        right: 5px;
-    }
-}
-
-@media (max-width:1024px) {
-    #showRightPanelBtn {
-        right: 8.5px;
-    }
 }
 
 #showRightPanelBtn:hover {
@@ -441,7 +424,17 @@ input::-webkit-search-results-decoration {
     transition: none !important;
 }
 
-@media (max-width: 1024px) {
+#showRightPanelBtn {
+    display: block !important;
+}
+
+@media (max-width:1215px) {
+    #showRightPanelBtn {
+        right: 5px;
+    }
+}
+
+@media (max-width:1024px) {
     #rightPanel {
         position: absolute;
         width: 250px;
@@ -450,25 +443,46 @@ input::-webkit-search-results-decoration {
     }
 
     #showRightPanelBtn {
-        display: block !important;
+        right: 8.5px;
     }
-
 }
 
-#daily-quote {
-    font-weight: 500;
-    font-family: Vazir;
-    color: var(--hover-light);
-    text-align: center;
-    margin-top: 20px;
+@media (max-width:320px) {
+    #showRightPanelBtn {
+        right: 4px !important;
+    }
 }
 
-#daily-img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+/* ================================================================================================================== */
+/* <<<- Scroll-Style ->>> */
+::-webkit-scrollbar {
+    width: 12px;
+    padding-left: 2px;
 }
 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px grey;
+    margin: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: #111;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--searchBox-bg);
+    z-index: 20000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--thumb-color);
+    transition: background-color ease 0.3s;
+}
+
+/* ================================================================================================================== */
+/* <<<- Switch-Input ->>> */
 .switch {
     position: relative;
     display: inline-block;
@@ -522,6 +536,10 @@ input:checked+.slider:before {
 }
 
 
+
+/* ================================================================================================================== */
+/* <<<- Theme-Panel-Settin ->>> */
+
 .ForSettingPanel {
     width: 100%;
     height: 1px;
@@ -561,7 +579,6 @@ input:checked+.slider:before {
     z-index: 1;
 }
 
-
 .theme-settings-panel.open {
     top: -9px;
     left: 9.5px;
@@ -580,13 +597,13 @@ input:checked+.slider:before {
     cursor: pointer;
     transition: all ease .3s, transform 0.3s ease;
     z-index: 9999999999999999999999;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 
 #toggleThemePanelBtn:hover {
     color: var(--icon-color-hover);
 }
 
-/* چرخش آیکون هنگام باز شدن */
 #toggleThemePanelBtn i.rotate {
     transform: rotate(180deg);
 }
@@ -605,7 +622,6 @@ input:checked+.slider:before {
     padding: 10px;
     margin-bottom: 8px;
 }
-
 
 .SBox>i {
     font-size: 25px;

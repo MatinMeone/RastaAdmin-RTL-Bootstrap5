@@ -110,12 +110,10 @@ function changeTheme(theme) {
   visitsChart.options.scales.y.ticks.color = colors.primaryText;
   visitsChart.options.scales.x.ticks.color = colors.primaryText;
 
-  // بلافاصله تغییرات اعمال می‌شوند
   userActivityChart.update();
   visitsChart.update();
 }
 
-// اضافه کردن رویداد کلیک به همه دکمه‌های تغییر تم
 document.querySelectorAll(".btnVTheme").forEach((button) => {
   button.addEventListener("click", function () {
     const newTheme = this.getAttribute("data-theme");
@@ -123,11 +121,9 @@ document.querySelectorAll(".btnVTheme").forEach((button) => {
   });
 });
 
-// ایجاد چارت کاربری
 const ctx = document.getElementById("userActivityChart").getContext("2d");
 let userActivityChart = createUserActivityChart(ctx);
 
-// ایجاد چارت بازدیدها
 const ctx_2 = document.getElementById("visitsChart").getContext("2d");
 let visitsChart = createVisitsChart(ctx_2);
 
