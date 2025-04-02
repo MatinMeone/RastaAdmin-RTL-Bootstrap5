@@ -143,90 +143,132 @@
 
                 <!-- !!! Put Here RenderBody() !!! -->
 
-
-                <div class="Theme-Box Theme-AdminProfile Theme-Box-Small">
-                    <img src="Bag/AdminDefualt.jpg">
-                    <p>متین فضلی</p>
-                    <button class="ThemeBtnNeon">
-                        خروج از بخش مدیریت
-                    </button>
+                <div class="Theme-List">
+                    <table class="table"
+                        style="border-radius: 5px; overflow: hidden; background: none !important; border-collapse: collapse; margin-top: 10px;">
+                        <tr>
+                            <button class="ThemeBtn ThemeBtn-C"> افزودن محصول </button>
+                            <th>
+                                نام محصول
+                            </th>
+                            <th>
+                                کد محصول
+                            </th>
+                            <th>
+                                تاریخ
+                            </th>
+                            <th>
+                                تصویر
+                            </th>
+                            <th>
+                                تخفیف
+                            </th>
+                            <th>
+                                عملیات
+                            </th>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        ازمایشی
+                                    </td>
+                                    <td>
+                                        P-W34SF
+                                    </td>
+                                    <td>
+                                        1404/01/01
+                                    </td>
+                                    <td>
+                                        <img src="Bag/TX1.jpg" alt="محصول">
+                                    </td>
+                                    <td>
+                                        20%
+                                    </td>
+                                    <td>
+                                        <button class="ThemeBtn ThemeBtn-S"> نمایش </button>
+                                        <button class="ThemeBtn ThemeBtn-E"> ویرایش </button>
+                                        <button class="ThemeBtn ThemeBtn-D"> حذف </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        تمرکز
+                                    </td>
+                                    <td>
+                                        P-G49F4
+                                    </td>
+                                    <td>
+                                        1404/01/02
+                                    </td>
+                                    <td>
+                                        <img src="Bag/TX2.jpg" alt="محصول">
+                                    </td>
+                                    <td>
+                                        30%
+                                    </td>
+                                    <td>
+                                        <button class="ThemeBtn ThemeBtn-S"> نمایش </button>
+                                        <button class="ThemeBtn ThemeBtn-E"> ویرایش </button>
+                                        <button class="ThemeBtn ThemeBtn-D"> حذف </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                    </table>
+                    <!-- Fake pagination !!! -->
+                    <nav class="pagination">
+                        <ul>
+                            <li class="prev disabled"><a href="#">&#10094;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="next"><a href="#">&#10095;</a></li>
+                        </ul>
+                    </nav>
                 </div>
 
-                <div class="Theme-Box Theme-QuickAc">
-                    <h4>دسترسی سریع
-                        <hr>
-                    </h4>
-                    <div class="Theme-QuickAcBox">
-                        <i class="fa-solid fa-house"></i>
-                        <i class="fa-solid fa-bolt"></i>
-                        <i class="fa-solid fa-rotate-right"></i>
-                        <i class="fa-solid fa-gear"></i>
-                    </div>
+                <div class="Theme-warning">
+                    <h3> هشدار یا اطلاعات شما برای مدیر سایت.... </h3>
                 </div>
 
-                <div class="Theme-Box Theme-Box-Small"
-                    style="height: 300px !important; display: flex; flex-direction: column; justify-content: space-between;">
-                    <p class="Theme-Input-Title"> نمودار بازدید </p>
-                    <canvas id="visitsChart"></canvas>
-                </div>
-
-
-
-
-                <div class="Theme-Comment Theme-Box Theme-Box-Small Theme-Text">
-                    <i class="fa-solid fa-comment"></i>
-                    <div class="Theme-CommentBox">
-                        <hr>
-                        <h4>نظر ها</h4>
-                        <h3>1,545</h3>
-                    </div>
-                </div>
-
-
-
-                <div class="Theme-Box Theme-Box-Small" style="width: 100px !important; height: 100px !important;">
-                    <canvas id="userActivityChart"></canvas>
-                </div>
-
-                <div class="Theme-Box" style="padding: 6px;">
-                    <img src="" id="daily-img">
-                    <div class="d-flex">
-                        <i class="fa-solid fa-image Theme-Text h4 me-1" style="margin-top: 13px;"></i>
-                        <label class="switch">
-                            <input type="checkbox" id="image-toggle">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <blockquote id="daily-quote" class="blockquote h4">در حال بارگذاری...</blockquote>
-                </div>
-
-                <div class="Theme-Box Theme-Box-Small MoreAc">
-                    <h4 class="Theme-Title text-center" style="padding: 4px;">دسترسی بیشتر</h4>
+                <div class="ThemeAdd">
+                    <h4 class="Theme-Title text-center"> افزودن محصول </h4>
+                    <div class="Theme-Warnings">لطفا تمامی فیلدها را پر کنید!</div>
                     <hr>
-                    <div class="Theme-MoreAcBox">
-                        <a href="#" class="ThemeBtnNeon Btn-Neon-R" style="width: 100% !important;"> عملیات الف</a>
-                        <a href="#" class="ThemeBtnNeon Btn-Neon-E" style="width: 100% !important;"> عملیات سین </a>
-                        <a href="#" class="ThemeBtnNeon Btn-Neon-D " style="width: 100% !important;"> عملیات دال </a>
-                    </div>
+                    <form class="Theme-crud-form">
+                        <label for="title">*عنوان:</label>
+                        <input type="text" id="title" name="title" class="Theme-Required">
+
+                        <label for="description">توضیحات:</label>
+                        <textarea id="description" name="description" rows="4" required
+                            placeholder="متن آزمایشی "></textarea>
+
+                        <label for="category">*دسته‌بندی:</label>
+                        <select id="category" name="category" class="Theme-Required">
+                            <option value="option1">گزینه ۱</option>
+                            <option value="option2">گزینه ۲</option>
+                            <option value="option3">گزینه ۳</option>
+                        </select>
+
+                        <label for="date">*تاریخ:</label>
+                        <input type="date" id="date" name="date" required class="Theme-Required">
+
+                        <label for="file">*آپلود فایل:</label>
+                        <input type="file" id="file" name="file" class="Theme-Required"
+                            style="padding-bottom: 39px !important; margin-bottom: 5px;">
+                        <div class="Theme-Warnings" style="margin-top: -13px; padding-top: 0;">فرمت تصویر میبایست jpg
+                            باشد!</div>
+
+                        <div class="buttons text-center">
+                            <a class="ThemeBtn Btn-Classic-2"> انصراف</a>
+                            <button type="submit" class="ThemeBtn Btn-Classic"> افزودن </button>
+                        </div>
+                    </form>
                 </div>
-
-
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
 
             </div>
         </div>
     </div>
-    <script src="Js/Chart-JavaScript.js"></script>
-    <script src="Js/Rasta-DailyQuote.js"></script>
     <script src="Js/Rasta-JavaScript.js"></script>
     <script src="Js/Rasta-Panels.js"></script>
 </body>

@@ -374,7 +374,7 @@ input::-webkit-search-results-decoration {
 }
 
 #rightPanel.show {
-    margin: 0 -2px 0 7px;
+    margin: 0 1px 0 4px;
 }
 
 #showRightPanelBtn {
@@ -392,6 +392,24 @@ input::-webkit-search-results-decoration {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     z-index: 999;
     transition: .3s;
+}
+
+@media (max-width:320px) {
+    #showRightPanelBtn {
+        right: 4px !important;
+    }
+}
+
+@media (max-width:1215px) {
+    #showRightPanelBtn {
+        right: 5px;
+    }
+}
+
+@media (max-width:1024px) {
+    #showRightPanelBtn {
+        right: 8.5px;
+    }
 }
 
 #showRightPanelBtn:hover {
@@ -526,13 +544,12 @@ input:checked+.slider:before {
     border-radius: 0 0 6px 6px;
     transition: transform 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    transition: .3s;
+    transition: .3s ease-in-out;
 }
 
-/* استایل اولیه پنل */
 .theme-settings-panel {
     position: absolute;
-    top: -600px;
+    top: -670px;
     left: 9.5px;
     min-width: 600px !important;
     background: #f3f3f3;
@@ -544,14 +561,12 @@ input:checked+.slider:before {
     z-index: 1;
 }
 
-/* زمانی که پنل باز است */
+
 .theme-settings-panel.open {
     top: -9px;
     left: 9.5px;
-    /* نمایش پنل */
 }
 
-/* دکمه */
 #toggleThemePanelBtn {
     position: absolute;
     top: -8px;

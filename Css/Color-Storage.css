@@ -22,6 +22,19 @@
     --Daily: #155E95;
     --active-user: #1c5332;
     --none-active: #839c8a;
+    --Btn-Neon-text: #b37d00;
+    --Btn-Neon-text-hover: #e29e00;
+    --Btn-Neon: #ffb30026;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #0087c8;
+    --Btn-Neon-R-Bg: #0085c80d;
+    --Btn-Neon-R-Bg-Hover: #185a7b41;
+    --Btn-Neon-E-Color: #008c6c;
+    --Btn-Neon-E-Bg: #008c6b0c;
+    --Btn-Neon-E-Bg-Hover: #0f6b5641;
+    --Btn-Neon-D-Color: #a66c2e;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 .theme-dark {
@@ -49,6 +62,19 @@
     --Daily: #6B728E;
     --active-user: #939185;
     --none-active: #72737270;
+    --Btn-Neon-text: #b37d00;
+    --Btn-Neon-text-hover: #e29e00;
+    --Btn-Neon: #ffb30026;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #0087c8;
+    --Btn-Neon-R-Bg: #0085c80d;
+    --Btn-Neon-R-Bg-Hover: #185a7b41;
+    --Btn-Neon-E-Color: #008c6c;
+    --Btn-Neon-E-Bg: #008c6b0c;
+    --Btn-Neon-E-Bg-Hover: #0f6b5641;
+    --Btn-Neon-D-Color: #a66c2e;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 
@@ -78,6 +104,19 @@
     --Daily: #E8C5E5;
     --active-user: #a0429a;
     --none-active: #887186;
+    --Btn-Neon-text: #de67b2;
+    --Btn-Neon-text-hover: #cb4399c8;
+    --Btn-Neon: #de67b237;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #0087c8;
+    --Btn-Neon-R-Bg: #0085c80d;
+    --Btn-Neon-R-Bg-Hover: #185a7b41;
+    --Btn-Neon-E-Color: #008c6c;
+    --Btn-Neon-E-Bg: #008c6b0c;
+    --Btn-Neon-E-Bg-Hover: #0f6b5641;
+    --Btn-Neon-D-Color: #a66c2e;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 
@@ -106,6 +145,19 @@
     --Daily: #a6469e;
     --active-user: #a0429a;
     --none-active: #887186;
+    --Btn-Neon-text: #872063;
+    --Btn-Neon-text-hover: #872063;
+    --Btn-Neon: #8720633d;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #0978b0;
+    --Btn-Neon-R-Bg: #0085c80d;
+    --Btn-Neon-R-Bg-Hover: #185a7b41;
+    --Btn-Neon-E-Color: #008c6c;
+    --Btn-Neon-E-Bg: #008c6b0c;
+    --Btn-Neon-E-Bg-Hover: #0f6b5641;
+    --Btn-Neon-D-Color: #8d571d;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 
@@ -137,6 +189,19 @@
     --Daily: #0097c0;
     --active-user: #261FB3;
     --none-active: #515483;
+    --Btn-Neon-text: #00ddff;
+    --Btn-Neon-text-hover: #92f0ff;
+    --Btn-Neon: #00238546;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #ad56ff;
+    --Btn-Neon-R-Bg: #ad56ff14;
+    --Btn-Neon-R-Bg-Hover: #6913b938;
+    --Btn-Neon-E-Color: #23c39d;
+    --Btn-Neon-E-Bg: #0fb68f0c;
+    --Btn-Neon-E-Bg-Hover: #15b69041;
+    --Btn-Neon-D-Color: #a66c2e;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 .theme-green {
@@ -164,6 +229,19 @@
     --Daily: #5CB338;
     --active-user: #34b862;
     --none-active: #b1b7b5;
+    --Btn-Neon-text: #15c674;
+    --Btn-Neon-text-hover: #1ba562;
+    --Btn-Neon: #0d3d267c;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #0f99dd;
+    --Btn-Neon-R-Bg: #009be814;
+    --Btn-Neon-R-Bg-Hover: #185a7b5e;
+    --Btn-Neon-E-Color: #b463f6;
+    --Btn-Neon-E-Bg: #903bd635;
+    --Btn-Neon-E-Bg-Hover: #661ba235;
+    --Btn-Neon-D-Color: #a66c2e;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 .theme-glass {
@@ -191,6 +269,19 @@
     --Daily: #155E95;
     --active-user: #1c5332;
     --none-active: #839c8a;
+    --Btn-Neon-text: #242424;
+    --Btn-Neon-text-hover: #111;
+    --Btn-Neon: #4e4e4e85;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #06acff;
+    --Btn-Neon-R-Bg: #184a63e0;
+    --Btn-Neon-R-Bg-Hover: #0f587c;
+    --Btn-Neon-E-Color: #00ff6e;
+    --Btn-Neon-E-Bg: #008c6bf4;
+    --Btn-Neon-E-Bg-Hover: #0c9b7af4;
+    --Btn-Neon-D-Color: #fd8505;
+    --Btn-Neon-D-Bg: #653b0fd0;
+    --Btn-Neon-D-Bg-Hover: #8f5211dd;
 }
 
 .theme-glass2 {
@@ -218,6 +309,19 @@
     --Daily: #155E95;
     --active-user: #1c5332;
     --none-active: #839c8a;
+    --Btn-Neon-text: #242424;
+    --Btn-Neon-text-hover: #111;
+    --Btn-Neon: #4e4e4e85;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #06acff;
+    --Btn-Neon-R-Bg: #184a63e0;
+    --Btn-Neon-R-Bg-Hover: #0f587c;
+    --Btn-Neon-E-Color: #00ff6e;
+    --Btn-Neon-E-Bg: #008c6bf4;
+    --Btn-Neon-E-Bg-Hover: #0c9b7af4;
+    --Btn-Neon-D-Color: #fd8505;
+    --Btn-Neon-D-Bg: #653b0fd0;
+    --Btn-Neon-D-Bg-Hover: #8f5211dd;
 }
 
 .theme-red {
@@ -245,6 +349,19 @@
     --Daily: #F93827;
     --active-user: #E52020;
     --none-active: #b37878;
+    --Btn-Neon-text: #dc200b;
+    --Btn-Neon-text-hover: #ff503c;
+    --Btn-Neon: #96160856;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #0087c8;
+    --Btn-Neon-R-Bg: #0085c80d;
+    --Btn-Neon-R-Bg-Hover: #185a7b41;
+    --Btn-Neon-E-Color: #008c6c;
+    --Btn-Neon-E-Bg: #008c6b0c;
+    --Btn-Neon-E-Bg-Hover: #0f6b5641;
+    --Btn-Neon-D-Color: #a66c2e;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 .theme-gold {
@@ -272,6 +389,19 @@
     --Daily: #c8b310;
     --active-user: #E14D2A;
     --none-active: #a87b59;
+    --Btn-Neon-text: #ffbd6c;
+    --Btn-Neon-text-hover: #ffd49f;
+    --Btn-Neon: #a3703182;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #b5eeff;
+    --Btn-Neon-R-Bg: #0085c80d;
+    --Btn-Neon-R-Bg-Hover: #185a7b41;
+    --Btn-Neon-E-Color: #20ffcb;
+    --Btn-Neon-E-Bg: #008c6b0c;
+    --Btn-Neon-E-Bg-Hover: #0f6b5641;
+    --Btn-Neon-D-Color: #c23333;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 .theme-purple-night {
@@ -299,6 +429,19 @@
     --Daily: #8174A0;
     --active-user: #F7374F;
     --none-active: #b1757c;
+    --Btn-Neon-text: #b273ff;
+    --Btn-Neon-text-hover: #cba0ff;
+    --Btn-Neon: #5325c727;
+    /* !!! if you dont use Neon Btns you can delete below value  */
+    --Btn-Neon-R-Color: #0087c8;
+    --Btn-Neon-R-Bg: #0085c80d;
+    --Btn-Neon-R-Bg-Hover: #185a7b41;
+    --Btn-Neon-E-Color: #11ae89;
+    --Btn-Neon-E-Bg: #008c6b0c;
+    --Btn-Neon-E-Bg-Hover: #0f6b5641;
+    --Btn-Neon-D-Color: #c48139;
+    --Btn-Neon-D-Bg: #a66c2e10;
+    --Btn-Neon-D-Bg-Hover: #704c2243;
 }
 
 /* دکمه‌ها */
