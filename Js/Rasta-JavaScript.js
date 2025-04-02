@@ -16,6 +16,8 @@ document.getElementById("SearchAc").addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  document.body.classList.remove("loading");
+
   const shadowClasses = [
     "shadow-black",
     "shadow-white",

@@ -269,3 +269,10 @@ window.addEventListener("resize", function () {
 window.addEventListener("beforeunload", function () {
   rightPanel.classList.add("initial-load");
 });
+
+window.addEventListener("load", function () {
+  let renderBody = document.getElementById("RenderBody");
+  if (renderBody) {
+    renderBody.style.width = "100%"; // یا مقدار دلخواه
+  }
+});

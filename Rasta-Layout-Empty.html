@@ -143,6 +143,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
 
@@ -150,134 +151,12 @@
 
                 <!-- ^^^ Put Here RenderBody() ^^^ -->
 
-                <div class="Theme-Box Theme-AdminProfile Theme-Box-Small">
-                    <img src="Bag/AdminDefualt.jpg">
-                    <p>متین فضلی</p>
-                    <button class="ThemeBtnNeon">
-                        خروج از بخش مدیریت
-                    </button>
-                </div>
-
-                <div class="Theme-Box Theme-QuickAc">
-                    <h4>دسترسی سریع
-                        <hr>
-                    </h4>
-                    <div class="Theme-QuickAcBox">
-                        <i class="fa-solid fa-house"></i>
-                        <i class="fa-solid fa-bolt"></i>
-                        <i class="fa-solid fa-rotate-right"></i>
-                        <i class="fa-solid fa-gear"></i>
-                    </div>
-                </div>
-
-                <div class="Theme-Box Theme-Box-Small"
-                    style="height: 300px !important; display: flex; flex-direction: column; justify-content: space-between;">
-                    <p class="Theme-Input-Title"> نمودار بازدید </p>
-                    <canvas id="visitsChart"></canvas>
-                </div>
-
-                <div class="Theme-Comment Theme-Box Theme-Box-Small Theme-Text">
-                    <i class="fa-solid fa-comment"></i>
-                    <div class="Theme-CommentBox">
-                        <hr>
-                        <h4>نظر ها</h4>
-                        <h3>1,545</h3>
-                    </div>
-                </div>
-
-                <div class="Theme-Box Theme-Box-Small" style="width: 100px !important; height: 100px !important;">
-                    <canvas id="userActivityChart"></canvas>
-                </div>
-
-                <div class="Theme-Box" style="padding: 6px; height: max-content !important;">
-                    <img src="" id="daily-img">
-                    <div class="d-flex">
-                        <i class="fa-solid fa-image Theme-Text h4 me-1" style="margin-top: 13px;"></i>
-                        <label class="switch">
-                            <input type="checkbox" id="image-toggle">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                    <blockquote id="daily-quote" class="blockquote h4">در حال بارگذاری...</blockquote>
-                </div>
-
-                <div class="Theme-Box Theme-Box-Small MoreAc">
-                    <h4 class="Theme-Title text-center" style="padding: 4px;">دسترسی بیشتر</h4>
-                    <hr>
-                    <div class="Theme-MoreAcBox">
-                        <a href="#" class="ThemeBtnNeon Btn-Neon-R" style="width: 100% !important;"> عملیات الف</a>
-                        <a href="#" class="ThemeBtnNeon Btn-Neon-E" style="width: 100% !important;"> عملیات سین </a>
-                        <a href="#" class="ThemeBtnNeon Btn-Neon-D " style="width: 100% !important;"> عملیات دال </a>
-                    </div>
-                </div>
-
-                <div class="Theme-Box Theme-Text"> می‌توانید محتوای مورد نظر خود را در این باکس‌ها قرار دهید </div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
-                <div class="Theme-Box"></div>
 
             </div>
         </div>
     </div>
-    <script src="Js/Chart-JavaScript.js"></script>
-    <script src="Js/Rasta-DailyQuote.js"></script>
     <script src="Js/Rasta-JavaScript.js"></script>
     <script src="Js/Rasta-Panels.js"></script>
 </body>
-
-<!-- Fake Pagination Style -->
-<style>
-    .pagination {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
-
-    .pagination ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        gap: 8px;
-    }
-
-    .pagination li {
-        display: inline-block;
-        padding: 8px 12px;
-        background: var(--searchBox-bg);
-        border-radius: 6px;
-        cursor: pointer;
-        transition: 0.3s;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-
-    .pagination li a {
-        text-decoration: none;
-        color: var(--primary-text);
-        font-weight: bold;
-    }
-
-    .pagination li:hover {
-        background: var(--third-color);
-        color: white;
-    }
-
-    .pagination .active {
-        background: var(--third-color);
-        color: white;
-    }
-
-    .pagination .prev.disabled,
-    .pagination .next.disabled {
-        opacity: 0.5;
-        pointer-events: none;
-    }
-</style>
-<!-- Fake Pagination -->
 
 </html>
