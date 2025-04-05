@@ -552,6 +552,7 @@ input[type="checkbox"]:checked+.custom-checkbox {
     background-color: #f5f5f50e;
     border: 2px solid var(--icon-color);
     transition: all ease .3s;
+    cursor: pointer;
 }
 
 .Theme-QuickAc i:hover {
